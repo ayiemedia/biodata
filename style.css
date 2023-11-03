@@ -1,0 +1,155 @@
+@media (max-width: 768px) {
+  body {
+    background: url(https://i.ibb.co/k5mGWGk/1.png) no-repeat top center fixed;
+  }
+  body:after{
+    background: url(https://i.ibb.co/k5mGWGk/1.png) center center;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background: url(https://i.ibb.co/k5mGWGk/1.png) no-repeat top center fixed;
+  }
+  body:after{
+    background: url(https://i.ibb.co/k5mGWGk/1.png) center center;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:0;
+  padding-bottom:100px;
+  font-family: 'Inter' Arial;
+  margin-top: 20px;
+}
+
+body:after{
+  content:"";
+  position:fixed;
+  top:0;
+  height:100vh;
+  left:0;
+  right:0;
+  z-index:-2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+::-moz-selection {
+  background: rgba(0,0,0,0.1);
+}
+::selection {
+  background: rgba(0,0,0,0.1);
+}
+h1 {
+  font-weight: 100;
+  font-size: 2.7em;
+}
+H2 {
+  COLOR: #FFF;
+  font-size: 1em;
+}
+h3 {
+  color: #111222;
+  font-size: 1.6em;
+}
+a {
+  color: RoyalBlue;
+  font-weight: normal;
+  text-decoration: none;
+}
+a:hover {
+  color: CornflowerBlue;
+}
+
+.circle {
+	line-height: 0;
+	display: inline-block;
+  border: 4px solid #c8c8c866;
+	border-radius: 50%;
+	transition: linear 0.25s;
+  height: 128px;
+  width: 128px;
+  margin-bottom: 20px;
+}
+.circle img {
+	border-radius: 50%;
+}
+.circle:hover {
+	transition: ease-out 0.2s;
+  border: 4px solid #570357;
+  -webkit-transition: ease-out 0.2s;
+}
+a.circle {
+  color: transparent;
+}
+
+.button-wrapper {
+  position: relative;
+}
+
+
+a.button {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 32px;
+  background-color: black;
+  color: white;
+	border-radius: 50px;
+  border: 0px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(90deg, #FF8038 0%, #FF0099 30.43%, #00EBEB 68.23%, #DB00FF 100%);
+  background-size: 600% 600%;
+  border-radius: 50px;
+  animation: AnimateBorder 4s ease infinite;
+  -webkit-animation: AnimateBorder 4s ease infinite;
+  -moz-animation: AnimateBorder 4s ease infinite;
+  z-index: -1;
+  transform: translate(-2px, -2px);
+  transition: filter 1s ease-in;
+}
+
+.button-wrapper:hover .button-bg {
+  filter: blur(10px);
+  transition: filter .4s ease-in;
+}
+
+
+@-webkit-keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
